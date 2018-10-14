@@ -48,10 +48,10 @@ router.get('/read/:id', (req, res) => {
 });
 
 // sample apli to test node server
-router.get("/users/ali", (req, res) => {
+router.get("/users/bhaskar", (req, res) => {
     User.find({}, (err, users) => {
         if (err) res.status(500).send(error);
-        console.log("this is user api");
+        console.log("this is user bhaskar");
         res.status(200).json({ name: "ali", age: "20" });
     });
 });
